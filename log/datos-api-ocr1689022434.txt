@@ -1,0 +1,1 @@
+{"factura":"TFIC50001781-00129820","urlFactura":"https://bot.pidepaya.com/facturas/50764110615ce83d78b-a6e5-42c5-8ed7-36b9c5ab1951.webp","fecha":"07-07-2023","costoTotal":59.989999999999995,"max":59.989999999999995,"telefono":"50764110615"} -API DATOS RECIBIDOS -  \n-API FIN - 

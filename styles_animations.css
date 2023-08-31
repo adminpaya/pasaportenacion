@@ -1,0 +1,653 @@
+  	
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        /* Center the loader */
+        #loader {
+            
+          position: fixed;
+          
+          left: 50%;
+          top: 50%;
+          z-index: 1;
+          width: 200px;
+          height: 200px;
+          margin: -76px 0 0 -76px;
+          border: 16px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 16px solid #3498db;
+          -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+        }
+        
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+        /* Add animation to "page content" */
+        .animate-bottom {
+          position: relative;
+          -webkit-animation-name: animatebottom;
+          -webkit-animation-duration: 1s;
+          animation-name: animatebottom;
+          animation-duration: 1s
+        }
+        
+        @-webkit-keyframes animatebottom {
+          from { bottom:-100px; opacity:0 } 
+          to { bottom:0px; opacity:1 }
+        }
+        
+        @keyframes animatebottom { 
+          from{ bottom:-100px; opacity:0 } 
+          to{ bottom:0; opacity:1 }
+        }
+
+        
+        
+        #myImg {
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        
+        #myImg:hover {opacity: 0.7;}
+        
+        .right_fac {
+          float: right;
+          width: 300px;
+          border: 3px solid #73AD21;
+          padding: 10px;
+        }
+        .left_fac {
+          float: left;
+          width: 300px;
+          border: 3px solid #73AD21;
+          padding: 10px;
+        }
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+        
+        /* Modal Content (image) */
+        .modal-content {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+        }
+        
+        /* Caption of Modal Image */
+        #caption {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+          text-align: center;
+          color: #ccc;
+          padding: 10px 0;
+          height: 150px;
+        }
+        
+        /* Add Animation */
+        .modal-content, #caption {  
+          -webkit-animation-name: zoom;
+          -webkit-animation-duration: 0.6s;
+          animation-name: zoom;
+          animation-duration: 0.6s;
+        }
+        
+        @-webkit-keyframes zoom {
+          from {-webkit-transform:scale(0)} 
+          to {-webkit-transform:scale(1)}
+        }
+        
+        @keyframes zoom {
+          from {transform:scale(0)} 
+          to {transform:scale(1)}
+        }
+        
+        /* The Close Button */
+        .close {
+          position: absolute;
+          top: 15px;
+          right: 35px;
+          color: #f1f1f1;
+          font-size: 40px;
+          font-weight: bold;
+          transition: 0.3s;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #bbb;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+        .open-modal{
+          border:none;
+          padding: 10px 30px;
+          font-size: 18px;
+          color: #ffffff;
+          background-color: #009688;
+          border-radius: 4px;
+        }
+        
+        
+        /*    MODAL RED     */
+        .modalred {
+          position: fixed;
+          z-index: 100;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0,0,0,0.6);
+        /*  display: none;*/
+          padding: 0 15px;
+        }
+        
+        .modalred.open {
+          display: block;
+        }
+        
+        /*
+        .modalred.closered {
+          display: none;
+        }
+        */
+        
+        .modalred.open .contentred{
+          animation: modalred 1s ease;
+        }
+        
+        .modalred.closered .contentred{
+          animation: modalred_hide 1s ease;
+        }
+        
+        @keyframes modalred{
+          0%{
+            transform: translateY(-100%);
+          }
+          100%{
+            transform: translateY(0%);
+          }
+        }
+        
+         @keyframes modalred_hide{
+          0%{
+            transform: translateY(0%);
+          }
+          100%{
+            transform: translateY(-100%);
+          }
+        }
+        
+        
+        .open-modalred{
+          border:none;
+          width: auto;
+          padding: 10px 30px;
+          font-size: 18px;
+          color: #ffffff;
+          background-color: #009688;
+          border-radius: 4px;
+        }
+        
+        .modalred .contentred{
+            
+          background-color: rgba(255,255,255,0.060);
+          backdrop-filter: blur(1rem);
+          color: white;
+          max-width : 600px;
+          max-height : 600px;
+          margin: 30px auto;
+          border-radius: 5px;
+          overflow: hidden;
+            
+
+        }
+        
+        .modalred .header-red,
+        .modalred .body-red,
+        .modalred .footer-red{
+          padding: 15px;
+        }
+        
+        .modalred .header-red{
+          width: 100%;
+          position: relative;
+          border-bottom: 2px solid #ccc;
+          /*background-color: #2196f3;*/
+          background-color: rgba(255,255,255,0.080);
+          backdrop-filter: blur(.5rem);
+        }
+        
+        .modalred .header-red h4{
+          font-family: palmer-lake;
+          font-size: 34px;
+          margin: 0;
+          color: #fff;
+          
+        }
+        
+        .modalred .header-red .close-modal-red{
+          position: absolute;
+          height: 30px;
+          width: 30px;
+          z-index: 101;
+          color: #ffffff;
+          text-align: center;
+          line-height: 30px;
+          right: 0;
+          top: 50%;
+          margin-top: -15px;
+          font-size: 20px;
+          cursor: pointer;
+          
+        }
+        
+        .modalred .footer-red{
+          border-top: 1px solid #ccc;
+        }
+        
+        .modalred .footer-red p {
+          font-size: 16px;
+          font-weight: bold;
+          margin: 0;
+        }
+        
+        
+        /*   MODAL RED     */
+        
+         /*   SECCION DE PULSAR */
+
+        
+        .pulse{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background: #0ef;
+            border-radius: 50%;
+        }
+        
+        .pulse span{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background: #0ef;
+            border-radius: 50%;
+        }
+
+         #whatsapp {
+             position: fixed;
+             z-index:100;
+             right: 50px;
+             bottom: 50px;
+             /*border: 3px solid #73AD21;*/
+         }
+                
+        #whatsapp .wtsapp{
+            
+            position: relative;
+            
+            transform: all .5s ease;
+            background-color: #e98731;
+            
+            display: block;
+            padding: 2px 0;
+            
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            border-radius: 50px;
+            border-right: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 30px;
+            /*
+            bottom: 70px;
+            left: 20px;
+            */
+            border: 0;
+            z-index: 9999;
+            width: 68px;
+            height: 68px;
+            line-height: 50px;
+        }
+        
+        #whatsapp .wtsapp:before{
+            
+            content: "";
+            
+            position: absolute;
+            
+            z-index: -1;
+            
+            left: 50%;
+            top: 50%;
+        
+            /*
+            transform: translateX(-50%) translateY(-50%);
+            */
+            /*
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: #25d366;
+            */
+            
+            display: block;
+            
+            background-color: #e98731;
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            -webkit-animation: pulse-border 1500ms ease-out infinite;
+            animation: pulse-border 1500ms ease-out infinite;
+            
+        }
+        
+        #whatsapp .wtsapp:focus{
+            border:none;
+            outline:none;
+        }
+        
+        #whatsapp .wtsapp i {
+	        font-size: 4rem;
+        }
+        
+        @keyframes pulse-border{
+            0%{transform: translateX(-50%)  translateY(-50%)  translateZ(0) scale(1); opacity: 1;}
+            100%{transform: translateX(-50%)  translateY(-50%)  translateZ(0) scale(1.5); opacity: 0;}
+        }
+        
+        
+        /*   SECCION DE PULSAR */
+        
+        
+        /*  SECCION DE BOTON PULSAR */
+         #pulsebtn {
+        
+
+             /*border: 3px solid #73AD21;*/
+         }
+                
+        #pulsebtn .pulsebutton{
+            
+            position: relative;
+            
+            transform: all .5s ease;
+            background-color: #e14f7f;
+            
+            display: block;
+            padding: 6px 0;
+            
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            border-radius: 50px;
+            border-right: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 10px;
+            /*
+            bottom: 70px;
+            left: 20px;
+            */
+            border: 0;
+            z-index: 9999;
+            width: 71px;
+            height: 71px;
+            line-height: 10px;
+        }
+        
+        #pulsebtn .pulsebutton:before{
+            
+            content: "";
+            
+            position: absolute;
+            
+            z-index: -1;
+            
+            left: 50%;
+            top: 50%;
+        
+            /*
+            transform: translateX(-50%) translateY(-50%);
+            */
+            /*
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: #25d366;
+            */
+            
+            display: block;
+            
+            background-color: #e14f7f;
+            width: 71px;
+            height: 71px;
+            border-radius: 50%;
+            -webkit-animation: pulse-button 1500ms ease-out infinite;
+            animation: pulse-button 1500ms ease-out infinite;
+            
+        }
+        
+        #pulsebtn .pulsebutton:focus{
+            border:none;
+            outline:none;
+        }
+        
+        #pulsebtn .pulsebutton i {
+	        font-size: 1.7rem;
+        }
+        
+        @keyframes pulse-button{
+            0%{transform: translateX(-50%)  translateY(-50%)  translateZ(0) scale(1); opacity: 1;}
+            100%{transform: translateX(-50%)  translateY(-50%)  translateZ(0) scale(1.5); opacity: 0;}
+        }
+        
+        
+        
+        #pulsebtnenviar {
+        
+
+             /*border: 5px solid #73AD21;*/
+             display: flex;
+         }
+                
+        #pulsebtnenviar .pulsebutton{
+            
+            position: relative;
+            
+            transform: all .5s ease;
+            background-color: #e14f7f;
+            
+            /*display: block;*/
+            padding: 2px 4px;
+            
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            border-radius: 50px;
+            border-right: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 10px;
+            /*
+            bottom: 70px;
+            left: 20px;
+            */
+            border: 0;
+            z-index: 9999;
+            width: 68px;
+            height: 68px;
+            line-height: 10px;
+        }
+        
+        #pulsebtnenviar .pulsebutton:before{
+            
+            content: "";
+            
+            position: absolute;
+            
+            z-index: -1;
+            
+            left: 50%;
+            top: 50%;
+        
+            /*
+            transform: translateX(-50%) translateY(-50%);
+            */
+            /*
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: #25d366;
+            */
+            
+            display: block;
+            
+            background-color: #e14f7f;
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            -webkit-animation: pulse-button 1500ms ease-out infinite;
+            animation: pulse-button 1500ms ease-out infinite;
+            
+        }
+        
+        #pulsebtnenviar .pulsebutton:focus{
+            border:none;
+            outline:none;
+        }
+        
+        #pulsebtnenviar .pulsebutton i {
+	        font-size: 1.8rem;
+        }
+        
+        
+        
+        #pulsefoto {
+        
+
+             /*border: 3px solid #73AD21;*/
+         }
+                
+        #pulsefoto .pulsebutton{
+            
+            position: relative;
+            
+            transform: all .5s ease;
+            background-color: #e14f7f;
+            
+            display: block;
+            padding: 6px 0;
+            
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            border-radius: 50%;
+            border-right: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 10px;
+            /*
+            bottom: 70px;
+            left: 20px;
+            */
+            border: 0;
+            z-index: 9999;
+            width: 161px;
+            height: 161px;
+            line-height: 10px;
+        }
+        
+        #pulsefoto .pulsebutton:before{
+            
+            content: "";
+            
+            position: absolute;
+            
+            z-index: -1;
+            
+            left: 50%;
+            top: 50%;
+        
+            /*
+            transform: translateX(-50%) translateY(-50%);
+            */
+            /*
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: #25d366;
+            */
+            
+            display: block;
+            
+            background-color: #e14f7f;
+            width: 161px;
+            height: 161px;
+            border-radius: 50%;
+            -webkit-animation: pulse-button 1500ms ease-out infinite;
+            animation: pulse-button 1500ms ease-out infinite;
+            
+        }
+        
+        #pulsefoto .pulsebutton:focus{
+            border:none;
+            outline:none;
+        }
+        
+        #pulsefoto .pulsebutton i {
+	        font-size: 8em;
+        }
+        
+        #pulsefoto .pulsebutton p {
+            margin-top: 18px;
+	        font-size: 1.1rem;
+        }
+        
+        
+        /*  SECCION DE BOTON PULSAR */
+        
+        
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 900px){
+              .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100vw; /* Full width */
+          height: 100%; /* Full height */
+            overflow: hidden;
+        overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+            
+          .modal-content {
+            width: 300px;
+          }
+      
+  
+        }

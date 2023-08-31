@@ -1,0 +1,1 @@
+  Inicio de registros:    Query de registros:  UPDATE pasaporte_usuarios SET perfil ='images/Screenshot_2023-08-26-18-56-22-438_com.android.chrome_perfil_1693130164.jpg' WHERE id ='79' ;  We did OK 

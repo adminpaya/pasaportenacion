@@ -1,0 +1,1 @@
+{"factura":"TFBX110050311-00418843","urlFactura":"https://bot.pidepaya.com/facturas/549293261216834bc9085-d94a-45f2-baad-3eeedfe24456.webp","fecha":"29-07-2023","costoTotal":12.84,"max":12.84,"telefono":"5492932612168"} -API DATOS RECIBIDOS - 

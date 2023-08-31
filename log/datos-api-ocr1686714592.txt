@@ -1,0 +1,38 @@
+[
+ {
+   "id": 1,
+   "name": {
+      "first": "Alonso",
+      "last": "Applewhite"
+   },
+   "rating": [
+      8,
+      7,
+      9
+   ]
+},
+ {
+   "id": 2,
+   "name": {
+      "first": "Gerardo",
+      "last": "Applewhite"
+   },
+   "rating": [
+      7,
+      6,
+      5
+   ]
+},
+ {
+   "id": 3,
+   "name": {
+      "first": "Joe",
+      "last": "Smoe"
+   },
+   "rating": [
+      4,
+      3,
+      null
+   ]
+}
+] -API DATOS RECIBIDOS -  \n-API FIN - 

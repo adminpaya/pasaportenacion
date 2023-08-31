@@ -1,0 +1,1 @@
+{"factura":"TFBX110050311-00408080","urlFactura":"https://bot.pidepaya.com/facturas/50766183087f6d895f5-bfb8-4b80-8736-380d3546d017.webp","fecha":"12-06-2023","max":68,"telefono":"50766183087"} -API DATOS RECIBIDOS -  \n-API FIN - 

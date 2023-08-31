@@ -1,0 +1,1 @@
+{"factura":"no se pudo leer","urlFactura":"https://bot.pidepaya.com/facturas/5076121468286e41ca2-48bb-4e71-9eea-3c4a569d3d3b.webp","fecha":"07-97-2023","max":59.39,"telefono":"50761214682"} -API DATOS RECIBIDOS -  \n-API FIN - 

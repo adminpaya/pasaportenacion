@@ -1,0 +1,1 @@
+{"factura":"TFHC50001450-00101418","urlFactura":"https://bot.pidepaya.com/facturas/54929326121685b8664bd-0040-4d81-a167-dd2fbdcb22e2.webp","fecha":"28-06-2023","costoTotal":70.73,"max":70.73,"telefono":"5492932612168"} -API DATOS RECIBIDOS -  \n-API FIN - 

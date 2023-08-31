@@ -1,0 +1,82 @@
+<?php
+include_once 'opendb.php';
+session_start();
+
+if( !isset($_SESSION['user_nombre'])  ){
+     
+      header("location: index.php");
+      die();
+    
+}
+
+
+$user     = $_SESSION['user_nombre'];
+$telefono = $_SESSION['user_telefono'];
+$email    = $_SESSION['user_email'];
+$id       = $_GET['id'];
+
+
+$test = " entra PHP ";
+include_once 'opendb.php';
+$test .= " luego al include ";
+$file = fopen('logPerfil.txt','w');
+fwrite($file, '  Inicio de registros:  ');
+$existente ='';
+echo "Here";
+
+
+if( $_SERVER['REQUEST_METHOD'] === 'POST'       ){
+        $ImageName = $_FILES['file']['name'];
+        $fileElementName = 'photo';
+        $path = 'images/'; 
+        
+        $path_parts = pathinfo($_FILES["file"]["name"]);
+        $image_path = $path_parts['filename'].'_perfil_'.time().'.'.$path_parts['extension'];
+        $location = $path . $image_path; 
+        
+        move_uploaded_file($_FILES['file']['tmp_name'], $location); 
+        $test .= " entra POST ";
+        
+        
+        $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname_paya);
+        $query_select_user = "UPDATE pasaporte_usuarios SET perfil ='".$location."' WHERE id ='".$id."' ;"; 
+        fwrite($file, '  Query de registros:  '. $query_select_user);
+        if( $resulted_facturas= $conn->query( $query_select_user ) ){
+             fwrite($file, '  We did OK ');
+        }
+        /*
+        if( $resulted_facturas= $conn->query( $query_select_facturas ) ){
+            $total_facturas = $resulted_facturas->num_rows;
+            if ($total_facturas > 0) {
+                $existente = "OK";
+                echo "EXISTE";
+
+                
+            }
+        }
+        
+        if($existente ==''){
+            echo $_GET['addNumero'];
+            $query_insert_nivel = "INSERT INTO pasaporte_facturas (usuario_id,fecha,total,numero,foto) VALUES (".$id.",'".date("Y-m-d h:i:s", strtotime($_POST['addFecha']))."','".$_POST['addTotal']."','".$_POST['addNumero']."','". $location."');";
+            fwrite($file, $query_insert_nivel);
+            //$query_insert_nivel = "INSERT INTO factura_api (nombre_cliente,ruc_proveedor,nombre_proveedor,total,fecha,date) VALUES ('Nacion',121245,'RiquezasDelMar',200,333333);";
+            if( $resulted_nivel= $conn->query( $query_insert_nivel ) ){
+                  //header("Location: niveles.php");
+                  $test .= " entra DB ";
+                  echo "OK";
+                  
+            }
+            else{
+                $sirve_nivel ="NO ENTRO BIEN A INSERT";
+                 $sirve_nivel .= $query_insert_nivel;
+                 $test .= " NO entra DB ";
+            }
+        }
+        */
+        $conn -> close();
+        
+}
+
+
+
+?>

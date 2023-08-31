@@ -1,0 +1,1 @@
+{"factura":"THKC20000084-00042925","urlFactura":"https://bot.pidepaya.com/facturas/50766183087f3c92b94-6529-4572-ba4d-9879adfe5197.webp","fecha":"23-08-2023","costoTotal":14,"max":14,"telefono":"50766183087"} -API DATOS RECIBIDOS - 

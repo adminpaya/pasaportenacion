@@ -1,0 +1,1 @@
+{"factura":"TERK050001811-00104846","urlFactura":"https://bot.pidepaya.com/facturas/507607078392ca86aed-f872-4892-b2e0-a16c5423d789.webp","fecha":"14-04-2023","costoTotal":74.1,"max":74.1,"telefono":"50760707839"} -API DATOS RECIBIDOS - 

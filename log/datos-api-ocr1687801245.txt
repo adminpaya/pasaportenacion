@@ -1,0 +1,1 @@
+{"factura":"TFHC50001450-00101012","urlFactura":"https://bot.pidepaya.com/facturas/50764110615f702897d-5e1c-4272-87f9-f0ee536d6440.webp","fecha":"26-06-2023","max":8.29,"telefono":"50764110615"} -API DATOS RECIBIDOS -  \n-API FIN - 

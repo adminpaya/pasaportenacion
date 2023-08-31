@@ -1,0 +1,834 @@
+{
+    "api_request": {
+        "error": {},
+        "resources": [
+            "document"
+        ],
+        "status": "success",
+        "status_code": 201,
+        "url": "https://api.mindee.net/v1/products/mindee/invoices/v4/predict"
+    },
+    "document": {
+        "id": "cfd1d3b2-33eb-4469-9dcf-f26cb8980647",
+        "inference": {
+            "extras": {},
+            "finished_at": "2023-02-14T19:34:03.719590",
+            "is_rotation_applied": true,
+            "pages": [
+                {
+                    "extras": {},
+                    "id": 0,
+                    "orientation": {
+                        "value": 0
+                    },
+                    "prediction": {
+                        "customer_address": {
+                            "confidence": 0.85,
+                            "polygon": [
+                                [
+                                    0.541,
+                                    0.252
+                                ],
+                                [
+                                    0.627,
+                                    0.252
+                                ],
+                                [
+                                    0.627,
+                                    0.264
+                                ],
+                                [
+                                    0.541,
+                                    0.264
+                                ]
+                            ],
+                            "value": "FRANCISCO"
+                        },
+                        "customer_company_registrations": [],
+                        "customer_name": {
+                            "confidence": 0.51,
+                            "polygon": [
+                                [
+                                    0.507,
+                                    0.236
+                                ],
+                                [
+                                    0.666,
+                                    0.236
+                                ],
+                                [
+                                    0.666,
+                                    0.264
+                                ],
+                                [
+                                    0.507,
+                                    0.264
+                                ]
+                            ],
+                            "value": "DIRECCION ENTREGA SAN FRANCISCO"
+                        },
+                        "date": {
+                            "confidence": 0.99,
+                            "polygon": [
+                                [
+                                    0.686,
+                                    0.161
+                                ],
+                                [
+                                    0.741,
+                                    0.161
+                                ],
+                                [
+                                    0.741,
+                                    0.173
+                                ],
+                                [
+                                    0.686,
+                                    0.173
+                                ]
+                            ],
+                            "value": "2023-02-01"
+                        },
+                        "document_type": {
+                            "value": "INVOICE"
+                        },
+                        "due_date": {
+                            "confidence": 0.99,
+                            "polygon": [
+                                [
+                                    0.651,
+                                    0.343
+                                ],
+                                [
+                                    0.708,
+                                    0.343
+                                ],
+                                [
+                                    0.708,
+                                    0.355
+                                ],
+                                [
+                                    0.651,
+                                    0.355
+                                ]
+                            ],
+                            "value": "2023-03-03"
+                        },
+                        "invoice_number": {
+                            "confidence": 0.95,
+                            "polygon": [
+                                [
+                                    0.796,
+                                    0.161
+                                ],
+                                [
+                                    0.878,
+                                    0.161
+                                ],
+                                [
+                                    0.878,
+                                    0.174
+                                ],
+                                [
+                                    0.796,
+                                    0.174
+                                ]
+                            ],
+                            "value": "F000034743"
+                        },
+                        "line_items": [
+                            {
+                                "confidence": 0.95,
+                                "description": "CAMARONES 21/25 30.00/ 45-CMR 130123",
+                                "polygon": [
+                                    [
+                                        0.092,
+                                        0.381
+                                    ],
+                                    [
+                                        0.899,
+                                        0.381
+                                    ],
+                                    [
+                                        0.899,
+                                        0.411
+                                    ],
+                                    [
+                                        0.092,
+                                        0.411
+                                    ]
+                                ],
+                                "product_code": null,
+                                "quantity": 30.0,
+                                "tax_amount": null,
+                                "tax_rate": null,
+                                "total_amount": 363.0,
+                                "unit_price": 12.1
+                            },
+                            {
+                                "confidence": 0.95,
+                                "description": "SPCL SALMON FILETE FRESCO 29.20 40-8-170123-010223",
+                                "polygon": [
+                                    [
+                                        0.098,
+                                        0.411
+                                    ],
+                                    [
+                                        0.9,
+                                        0.411
+                                    ],
+                                    [
+                                        0.9,
+                                        0.441
+                                    ],
+                                    [
+                                        0.098,
+                                        0.441
+                                    ]
+                                ],
+                                "product_code": null,
+                                "quantity": 29.2,
+                                "tax_amount": null,
+                                "tax_rate": null,
+                                "total_amount": 471.0,
+                                "unit_price": 16.13
+                            },
+                            {
+                                "confidence": 0.9,
+                                "description": "BASA FILETE 170/220 40.00 /70-FB-030822",
+                                "polygon": [
+                                    [
+                                        0.089,
+                                        0.439
+                                    ],
+                                    [
+                                        0.901,
+                                        0.439
+                                    ],
+                                    [
+                                        0.901,
+                                        0.469
+                                    ],
+                                    [
+                                        0.089,
+                                        0.469
+                                    ]
+                                ],
+                                "product_code": null,
+                                "quantity": 40.0,
+                                "tax_amount": null,
+                                "tax_rate": null,
+                                "total_amount": 184.0,
+                                "unit_price": 4.6
+                            },
+                            {
+                                "confidence": 0.94,
+                                "description": "TOBIKO ORANGE 2.00 45-TKO 250122",
+                                "polygon": [
+                                    [
+                                        0.089,
+                                        0.469
+                                    ],
+                                    [
+                                        0.903,
+                                        0.469
+                                    ],
+                                    [
+                                        0.903,
+                                        0.499
+                                    ],
+                                    [
+                                        0.089,
+                                        0.499
+                                    ]
+                                ],
+                                "product_code": null,
+                                "quantity": 2.0,
+                                "tax_amount": null,
+                                "tax_rate": null,
+                                "total_amount": 31.0,
+                                "unit_price": 15.5
+                            },
+                            {
+                                "confidence": 0.93,
+                                "description": "FROZEN SEASONED SEAWEED SALAD 2 100 45-SWS-030822",
+                                "polygon": [
+                                    [
+                                        0.099,
+                                        0.499
+                                    ],
+                                    [
+                                        0.903,
+                                        0.499
+                                    ],
+                                    [
+                                        0.903,
+                                        0.527
+                                    ],
+                                    [
+                                        0.099,
+                                        0.527
+                                    ]
+                                ],
+                                "product_code": null,
+                                "quantity": 2.0,
+                                "tax_amount": null,
+                                "tax_rate": null,
+                                "total_amount": 26.0,
+                                "unit_price": 13.0
+                            }
+                        ],
+                        "locale": {
+                            "confidence": 0.81,
+                            "currency": "USD",
+                            "language": "es"
+                        },
+                        "orientation": {
+                            "confidence": 0.99,
+                            "degrees": 0
+                        },
+                        "reference_numbers": [],
+                        "supplier_address": {
+                            "confidence": 0.54,
+                            "polygon": [
+                                [
+                                    0.071,
+                                    0.12
+                                ],
+                                [
+                                    0.278,
+                                    0.12
+                                ],
+                                [
+                                    0.278,
+                                    0.166
+                                ],
+                                [
+                                    0.071,
+                                    0.166
+                                ]
+                            ],
+                            "value": "1547682 1-656808 DV 73 CALLE 12 RIO ABAJO Other"
+                        },
+                        "supplier_company_registrations": [
+                            {
+                                "confidence": 0.99,
+                                "polygon": [
+                                    [
+                                        0.121,
+                                        0.182
+                                    ],
+                                    [
+                                        0.202,
+                                        0.182
+                                    ],
+                                    [
+                                        0.202,
+                                        0.197
+                                    ],
+                                    [
+                                        0.121,
+                                        0.197
+                                    ]
+                                ],
+                                "type": "STNR",
+                                "value": "5073992560"
+                            }
+                        ],
+                        "supplier_name": {
+                            "confidence": 0.38,
+                            "polygon": [
+                                [
+                                    0.071,
+                                    0.098
+                                ],
+                                [
+                                    0.303,
+                                    0.098
+                                ],
+                                [
+                                    0.303,
+                                    0.134
+                                ],
+                                [
+                                    0.071,
+                                    0.134
+                                ]
+                            ],
+                            "value": "M & R DISTRIBUITORS, INC RUC 1547682"
+                        },
+                        "supplier_payment_details": [],
+                        "taxes": [],
+                        "total_amount": {
+                            "confidence": 0.99,
+                            "polygon": [
+                                [
+                                    0.772,
+                                    0.884
+                                ],
+                                [
+                                    0.872,
+                                    0.884
+                                ],
+                                [
+                                    0.872,
+                                    0.904
+                                ],
+                                [
+                                    0.772,
+                                    0.904
+                                ]
+                            ],
+                            "value": 1075.0
+                        },
+                        "total_net": {
+                            "confidence": 0.99,
+                            "polygon": [
+                                [
+                                    0.772,
+                                    0.884
+                                ],
+                                [
+                                    0.872,
+                                    0.884
+                                ],
+                                [
+                                    0.872,
+                                    0.904
+                                ],
+                                [
+                                    0.772,
+                                    0.904
+                                ]
+                            ],
+                            "value": 1075.0
+                        }
+                    }
+                }
+            ],
+            "prediction": {
+                "customer_address": {
+                    "confidence": 0.85,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.541,
+                            0.252
+                        ],
+                        [
+                            0.627,
+                            0.252
+                        ],
+                        [
+                            0.627,
+                            0.264
+                        ],
+                        [
+                            0.541,
+                            0.264
+                        ]
+                    ],
+                    "value": "FRANCISCO"
+                },
+                "customer_company_registrations": [],
+                "customer_name": {
+                    "confidence": 0.51,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.507,
+                            0.236
+                        ],
+                        [
+                            0.666,
+                            0.236
+                        ],
+                        [
+                            0.666,
+                            0.264
+                        ],
+                        [
+                            0.507,
+                            0.264
+                        ]
+                    ],
+                    "value": "DIRECCION ENTREGA SAN FRANCISCO"
+                },
+                "date": {
+                    "confidence": 0.99,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.686,
+                            0.161
+                        ],
+                        [
+                            0.741,
+                            0.161
+                        ],
+                        [
+                            0.741,
+                            0.173
+                        ],
+                        [
+                            0.686,
+                            0.173
+                        ]
+                    ],
+                    "value": "2023-02-01"
+                },
+                "document_type": {
+                    "value": "INVOICE"
+                },
+                "due_date": {
+                    "confidence": 0.99,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.651,
+                            0.343
+                        ],
+                        [
+                            0.708,
+                            0.343
+                        ],
+                        [
+                            0.708,
+                            0.355
+                        ],
+                        [
+                            0.651,
+                            0.355
+                        ]
+                    ],
+                    "value": "2023-03-03"
+                },
+                "invoice_number": {
+                    "confidence": 0.95,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.796,
+                            0.161
+                        ],
+                        [
+                            0.878,
+                            0.161
+                        ],
+                        [
+                            0.878,
+                            0.174
+                        ],
+                        [
+                            0.796,
+                            0.174
+                        ]
+                    ],
+                    "value": "F000034743"
+                },
+                "line_items": [
+                    {
+                        "confidence": 0.95,
+                        "description": "CAMARONES 21/25 30.00/ 45-CMR 130123",
+                        "page_id": 0,
+                        "polygon": [
+                            [
+                                0.092,
+                                0.381
+                            ],
+                            [
+                                0.899,
+                                0.381
+                            ],
+                            [
+                                0.899,
+                                0.411
+                            ],
+                            [
+                                0.092,
+                                0.411
+                            ]
+                        ],
+                        "product_code": null,
+                        "quantity": 30.0,
+                        "tax_amount": null,
+                        "tax_rate": null,
+                        "total_amount": 363.0,
+                        "unit_price": 12.1
+                    },
+                    {
+                        "confidence": 0.95,
+                        "description": "SPCL SALMON FILETE FRESCO 29.20 40-8-170123-010223",
+                        "page_id": 0,
+                        "polygon": [
+                            [
+                                0.098,
+                                0.411
+                            ],
+                            [
+                                0.9,
+                                0.411
+                            ],
+                            [
+                                0.9,
+                                0.441
+                            ],
+                            [
+                                0.098,
+                                0.441
+                            ]
+                        ],
+                        "product_code": null,
+                        "quantity": 29.2,
+                        "tax_amount": null,
+                        "tax_rate": null,
+                        "total_amount": 471.0,
+                        "unit_price": 16.13
+                    },
+                    {
+                        "confidence": 0.9,
+                        "description": "BASA FILETE 170/220 40.00 /70-FB-030822",
+                        "page_id": 0,
+                        "polygon": [
+                            [
+                                0.089,
+                                0.439
+                            ],
+                            [
+                                0.901,
+                                0.439
+                            ],
+                            [
+                                0.901,
+                                0.469
+                            ],
+                            [
+                                0.089,
+                                0.469
+                            ]
+                        ],
+                        "product_code": null,
+                        "quantity": 40.0,
+                        "tax_amount": null,
+                        "tax_rate": null,
+                        "total_amount": 184.0,
+                        "unit_price": 4.6
+                    },
+                    {
+                        "confidence": 0.94,
+                        "description": "TOBIKO ORANGE 2.00 45-TKO 250122",
+                        "page_id": 0,
+                        "polygon": [
+                            [
+                                0.089,
+                                0.469
+                            ],
+                            [
+                                0.903,
+                                0.469
+                            ],
+                            [
+                                0.903,
+                                0.499
+                            ],
+                            [
+                                0.089,
+                                0.499
+                            ]
+                        ],
+                        "product_code": null,
+                        "quantity": 2.0,
+                        "tax_amount": null,
+                        "tax_rate": null,
+                        "total_amount": 31.0,
+                        "unit_price": 15.5
+                    },
+                    {
+                        "confidence": 0.93,
+                        "description": "FROZEN SEASONED SEAWEED SALAD 2 100 45-SWS-030822",
+                        "page_id": 0,
+                        "polygon": [
+                            [
+                                0.099,
+                                0.499
+                            ],
+                            [
+                                0.903,
+                                0.499
+                            ],
+                            [
+                                0.903,
+                                0.527
+                            ],
+                            [
+                                0.099,
+                                0.527
+                            ]
+                        ],
+                        "product_code": null,
+                        "quantity": 2.0,
+                        "tax_amount": null,
+                        "tax_rate": null,
+                        "total_amount": 26.0,
+                        "unit_price": 13.0
+                    }
+                ],
+                "locale": {
+                    "confidence": 0.81,
+                    "currency": "USD",
+                    "language": "es"
+                },
+                "reference_numbers": [],
+                "supplier_address": {
+                    "confidence": 0.54,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.071,
+                            0.12
+                        ],
+                        [
+                            0.278,
+                            0.12
+                        ],
+                        [
+                            0.278,
+                            0.166
+                        ],
+                        [
+                            0.071,
+                            0.166
+                        ]
+                    ],
+                    "value": "1547682 1-656808 DV 73 CALLE 12 RIO ABAJO Other"
+                },
+                "supplier_company_registrations": [
+                    {
+                        "confidence": 0.99,
+                        "page_id": 0,
+                        "polygon": [
+                            [
+                                0.121,
+                                0.182
+                            ],
+                            [
+                                0.202,
+                                0.182
+                            ],
+                            [
+                                0.202,
+                                0.197
+                            ],
+                            [
+                                0.121,
+                                0.197
+                            ]
+                        ],
+                        "type": "STNR",
+                        "value": "5073992560"
+                    }
+                ],
+                "supplier_name": {
+                    "confidence": 0.38,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.071,
+                            0.098
+                        ],
+                        [
+                            0.303,
+                            0.098
+                        ],
+                        [
+                            0.303,
+                            0.134
+                        ],
+                        [
+                            0.071,
+                            0.134
+                        ]
+                    ],
+                    "value": "M & R DISTRIBUITORS, INC RUC 1547682"
+                },
+                "supplier_payment_details": [],
+                "taxes": [],
+                "total_amount": {
+                    "confidence": 0.99,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.772,
+                            0.884
+                        ],
+                        [
+                            0.872,
+                            0.884
+                        ],
+                        [
+                            0.872,
+                            0.904
+                        ],
+                        [
+                            0.772,
+                            0.904
+                        ]
+                    ],
+                    "value": 1075.0
+                },
+                "total_net": {
+                    "confidence": 0.99,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.772,
+                            0.884
+                        ],
+                        [
+                            0.872,
+                            0.884
+                        ],
+                        [
+                            0.872,
+                            0.904
+                        ],
+                        [
+                            0.772,
+                            0.904
+                        ]
+                    ],
+                    "value": 1075.0
+                }
+            },
+            "processing_time": 1.051,
+            "product": {
+                "features": [
+                    "reference_numbers",
+                    "locale",
+                    "invoice_number",
+                    "date",
+                    "due_date",
+                    "total_net",
+                    "total_amount",
+                    "taxes",
+                    "supplier_payment_details",
+                    "supplier_name",
+                    "supplier_company_registrations",
+                    "supplier_address",
+                    "customer_name",
+                    "customer_company_registrations",
+                    "customer_address",
+                    "document_type",
+                    "orientation",
+                    "line_items"
+                ],
+                "name": "mindee/invoices",
+                "type": "standard",
+                "version": "4.1"
+            },
+            "started_at": "2023-02-14T19:34:02.668428"
+        },
+        "n_pages": 1,
+        "name": "FacturaTEST2.jpeg"
+    }
+}

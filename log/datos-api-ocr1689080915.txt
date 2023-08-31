@@ -1,0 +1,1 @@
+{"telefono":"5492932612168"} -API DATOS RECIBIDOS - tps://bot.pidepaya.com/facturas/54929326121684584f100-85c0-4e88-b78d-20612df21fd4.webp","fecha":"28-06-2023","costoTotal":57.67,"max":57.67,"telefono":"5492932612168"} -API DATOS RECIBIDOS - 

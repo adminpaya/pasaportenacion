@@ -1,0 +1,1 @@
+{"factura":"FNKE30001811-00105572","urlFactura":"https://bot.pidepaya.com/facturas/50766183087b1379786-2ad6-4407-8ccc-f49b8d208120.webp","fecha":"no se pudo leer","costoTotal":69.29,"max":69.29,"telefono":"50766183087"} -API DATOS RECIBIDOS - 

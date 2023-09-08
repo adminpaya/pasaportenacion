@@ -386,7 +386,7 @@ if( $resulted_select= $conn->query( $query_select_usuario ) ){
 
              <div id="top-pasaporte-step2" class="container-top-pasaporte" style ="display : none" >
 
-                   <br><h3 style="color: white; text-align: center; font-size: 1.8em;">!Hola viajero!<br>La factura ha sido registrada<br>de manera exitosa, recuerda apretar el botón de guardar</h3>
+                   <br><h3 style="color: white; text-align: center; font-size: 1.8em;">¡Hola viajero!<br>La factura ha sido registrada<br>de manera exitosa, recuerda apretar el botón de guardar</h3>
 
             </div>
 
@@ -502,7 +502,7 @@ if( $resulted_select= $conn->query( $query_select_usuario ) ){
 
         		            
 
-        					<a href="pasaporte.php?ses=1"> <h6>cerrar sesion</h6></a>
+        					<a href="pasaporte.php?ses=1"> <h6>cerrar sesión</h6></a>
 
         				
 

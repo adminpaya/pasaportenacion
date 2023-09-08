@@ -14,7 +14,7 @@ $query='Empty';
 
 if(isset($_POST['addTelefono'])){
 
-$phone= $_POST['addTelefono'];
+$phone= str_replace('-', '', $_POST['addTelefono']);
 
 $mensaje_enviar = "Este telefono no existe en nuestros sistema, registrate en: https://nacionsushi.com/pasaportenacion/ ";
 
@@ -40,7 +40,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'   &&  isset($_POST['addTelefono']) ){
 
      
 
-     $telefono= $_POST['addTelefono'];
+     $telefono= str_replace('-', '', $_POST['addTelefono']);
 
      $telefono = stripcslashes($telefono);
 
@@ -100,7 +100,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'   &&  isset($_POST['addTelefono']) ){
 
     
 
-    $telefono = "507".$_POST['addTelefono'];
+    $telefono = "507".str_replace('-', '', $_POST['addTelefono']);
 
     
 
@@ -958,7 +958,7 @@ echo $query;
 
 				    <h2>COLOCA TU TELÉFONO </h2>
 
-				<p>teléfono</p>
+				<p>teléfono sin "-" y sin espacios</p>
 
 				<input type="text" name="addTelefono" id="addTelefono" class="text">
 
@@ -1118,7 +1118,7 @@ echo $query;
 
     if( $_SERVER['REQUEST_METHOD'] == 'POST'  && $resultado =="OK"){
 
-        $telefono = "507".$_POST['addTelefono'];
+        $telefono = "507".str_replace('-', '', $_POST['addTelefono']);
 
         $curl = curl_init();
 
@@ -1171,10 +1171,11 @@ echo $query;
         if($response =="Número en WhatsApp, enviando mensaje"){
 
             $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname_paya);
+            $tel = str_replace('-', '', $_POST['addTelefono']);
 
    
 
-            $query_update_usuario = "UPDATE pasaporte_usuarios SET estado = 'OK'  WHERE telefono='".$_POST['addTelefono']."';"; 
+            $query_update_usuario = "UPDATE pasaporte_usuarios SET estado = 'OK'  WHERE telefono='".$tel."';"; 
 
 
 
@@ -1197,10 +1198,11 @@ echo $query;
         } else {
 
             $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname_paya);
+            $tel = str_replace('-', '', $_POST['addTelefono']);
 
    
 
-            $query_update_usuario = "UPDATE pasaporte_usuarios SET estado = 'FAIL'  WHERE telefono='".$_POST['addTelefono']."';"; 
+            $query_update_usuario = "UPDATE pasaporte_usuarios SET estado = 'FAIL'  WHERE telefono='".$tel."';"; 
 
 
 

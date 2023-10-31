@@ -1235,7 +1235,7 @@ echo $query;
 
 			
 
-			<div class="content-card-panel"  id= 'user_table' >
+			<div class="content-card-panel"  id= 'user_table' style="display:none" >
 
 				
 
@@ -1329,7 +1329,7 @@ echo $query;
 
 			
 
-			<div class="content-card-panel"   id= "invoice_table"   style="display:none" >
+			<div class="content-card-panel"   id= "invoice_table"    >
 
 				
 
@@ -1357,7 +1357,7 @@ echo $query;
 
                     if ($resulted_select->num_rows > 0) {
 
-                        echo "<table id='table2' class='content-table' ><thead><tr><th>Usuario</th><th>Fecha</th><th>Total</th><th>Numero</th><th>Foto</th><th>Borrar</th></tr></thead><tbody>";
+                        echo "<table id='table-invoice' class='content-table' ><thead><tr><th>Usuario</th><th>Fecha</th><th>Total</th><th>Numero</th><th>Foto</th><th>Borrar</th></tr></thead><tbody>";
 
                         while($row = $resulted_select->fetch_assoc()) { 
 
@@ -1986,9 +1986,6 @@ echo $query;
                theHtml = "<div  id='factura_ganador' ><h1>Factura Ganadora: "+obj.numero+" </h1></div>";
 
                theHtml += "<div  id='nombre_ganador' ><h1>Nombre del Ganador: "+obj.nombre+" </h1></div>";
-			   theHtml += "<div  id='nombre_usuario_ganador' ><h1>Nombre COMPLETO del Ganador: "+obj.nombre_usuario+" </h1></div>";
-			   theHtml += "<div  id='telefono_ganador' ><h1>Telefono del Ganador: "+obj.telefono+" </h1></div>";
-			   theHtml += "<div  id='email_ganador' ><h1>Email del Ganador: "+obj.email+" </h1></div>";
 
                theHtml += "<button onclick='Showimg(\""+obj.foto+"\")' class= 'button'>VER FOTO</button>";
 

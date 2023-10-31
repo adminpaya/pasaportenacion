@@ -19,6 +19,9 @@ if( $resulted_ganador = $conn->query( $query_select_ganador ) ){
             if( $resulted_ganador_nombre = $conn2->query( $query_select_ganador_nombre ) ){
                 while($row_usuarios_nombre = $resulted_ganador_nombre->fetch_assoc()) {
                     $ganador_unico['nombre'] = $row_usuarios_nombre['nombre'];
+					$ganador_unico['nombre_usuario'] = $row_usuarios_nombre['nombre_usuario'];
+					$ganador_unico['email'] = $row_usuarios_nombre['email'];
+					$ganador_unico['telefono'] = $row_usuarios_nombre['telefono'];
                 }
             }
             array_push($ganador_final, $ganador_unico);

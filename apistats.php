@@ -52,6 +52,20 @@ if($total_usuarios_hoy > 0){
 
 }
 
+
+$query = "SELECT * FROM pasaporte_facturas";
+$result = $conn->query($query);
+$total_facturas = $result->num_rows;
+if($total_facturas > 0){
+
+    $resultados['facturas'] = $total_facturas;
+    while ($row = $result->fetch_assoc()) {
+        
+    }
+}else{
+
+}
+
 // Devuelve la respuesta como un objeto JSON con los proveedores
 $conn->close();
 echo json_encode($resultados);

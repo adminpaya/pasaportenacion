@@ -37,7 +37,7 @@ curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
     'Content-Type: application/json',
-    'Authorization: Bearer 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'
+    'Authorization: Bearer openaiapikey'
 ));
 
 $response = curl_exec($ch);

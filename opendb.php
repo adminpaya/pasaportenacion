@@ -2,13 +2,13 @@
 
 $dbhost = 'localhost';
 
-$dbuser = 'naci_pasaporte'; 
+$dbuser = 'dbuser'; 
 
-$dbpass = 'DMnJwEj3oHvpcGe^';
+$dbpass = 'dbpass';
 
-$dbname = 'naci_pasaporte';
+$dbname = 'dbname';
 
-$dbname_paya = 'naci_pasaporte';
+
 
 
 
